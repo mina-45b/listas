@@ -6,6 +6,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
 
+        <link rel="icon" href="media/palette.png">
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Listas Practica</title>
@@ -28,6 +30,11 @@
                 border: 2px solid white;
             }
 
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
             hr {
                 margin-bottom: 20px;
             }
@@ -35,9 +42,11 @@
             li {
                 margin-bottom: 10px;
             }
+
             dl {
                 margin-bottom: 5px;
             }
+
             dt {
                 margin-top: 10px;
                 font-weight: bold;
@@ -113,14 +122,15 @@
             .imagenes img {
                 width: 100%;
             }
+
             .iconos {
                 text-align: center;
             }
+
             .iconos img {
                 width: 30px;
                 margin: 0 5px
             }
-
         </style>
     </head>
 
@@ -129,7 +139,7 @@
             <header>
                 <h1>LOS COLORES</h1>
             </header>
-            
+
             <article>
                 <h2>Lista de colores</h2>
                 <p>En las siguientes tablas se da una lista de colores. Están agrupados por similitud, de modo que a
@@ -150,16 +160,26 @@
 
             <article>
                 <h2>Colores Básico y Primarios</h2>
-                <ul class="basicosprimarios" type="circle">
-                    <li class="rojo" >Rojo y sus matices</li>
-                    <li class="verde">Verde y sus matices</li>
-                    <li class="azul">Azul y sus matices</li>
+                <ul class="basicosprimarios" id="colores" type="circle">
+                    <a href="#maticesrojos">
+                        <li class="rojo">Rojo y sus matices</li>
+                    </a>
+                    <a href="#maticesverdes">
+                        <li class="verde">Verde y sus matices</li>
+                    </a>
+                    <a href="#maticesazul">
+                        <li class="azul">Azul y sus matices</li>
+                    </a>
                     <li class="magenta">Magenta y sus matices</li>
                     <li class="cian">Cian y sus matices</li>
-                    <li class="amarillo">Amarillo y sus matices</li>
+                    <a href="#maticesamarillos">
+                        <li class="amarillo">Amarillo y sus matices</li>
+                    </a>
                     <li class="marron">Marrón y sus matices</li>
                     <li class="violeta">Violeta y sus matices</li>
-                    <li class="naranja">Naranja y sus matices</li>
+                    <a href="#maticesnaranja">
+                        <li class="naranja">Naranja y sus matices</li>
+                    </a>
                     <li class="neutros">Blancos, grises y negros</li>
                 </ul>
                 <br>
@@ -168,76 +188,98 @@
             <article>
                 <h2>Primarios</h2>
                 <ol>
-                    <li>Rojo y sus matices
+                    <li id="maticesrojos"><a href="#colores">Rojo y sus matices</a>
                         <hr>
                         <ul type="square">
-                            <li>Rojo bermellón: rojo anaranjado brillante, originalmente hecho del mineral cinabrio. Fue ampliamente usado en la antigua Roma y en manuscritos medievales.</li>
-                            <li>Rojo burdeos: rojo oscuro con matices púrpuras, inspirado en el vino de Burdeos. Representa lujo y refinamiento. En el español rioplatense este tono de rojo se designa con la palabra argentina “bordó”, una adaptación de la palabra francesa bordeaux.</li>
-                            <li>Rojo carmesí: rojo profundo e intenso con ligeros toques azulados o violetas. Evoca sofisticación y pasión.</li>
+                            <li>Rojo bermellón: rojo anaranjado brillante, originalmente hecho del mineral cinabrio. Fue
+                                ampliamente usado en la antigua Roma y en manuscritos medievales.</li>
+                            <li>Rojo burdeos: rojo oscuro con matices púrpuras, inspirado en el vino de Burdeos.
+                                Representa lujo y refinamiento. En el español rioplatense este tono de rojo se designa
+                                con la palabra argentina “bordó”, una adaptación de la palabra francesa bordeaux.</li>
+                            <li>Rojo carmesí: rojo profundo e intenso con ligeros toques azulados o violetas. Evoca
+                                sofisticación y pasión.</li>
                         </ul>
                         <br>
                         <div class="imagenes">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Eudocimus_ruber_-Cubatao%2C_Sao_Paulo%2C_Brazil_-flying-8a.jpg/120px-Eudocimus_ruber_-Cubatao%2C_Sao_Paulo%2C_Brazil_-flying-8a.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Korreldragende-gifkikker-3.jpg/120px-Korreldragende-gifkikker-3.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Dahlia_%27Labella_Grande_Neon%27_01.JPG/120px-Dahlia_%27Labella_Grande_Neon%27_01.JPG" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Eudocimus_ruber_-Cubatao%2C_Sao_Paulo%2C_Brazil_-flying-8a.jpg/120px-Eudocimus_ruber_-Cubatao%2C_Sao_Paulo%2C_Brazil_-flying-8a.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Korreldragende-gifkikker-3.jpg/120px-Korreldragende-gifkikker-3.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Dahlia_%27Labella_Grande_Neon%27_01.JPG/120px-Dahlia_%27Labella_Grande_Neon%27_01.JPG"
+                                alt="">
                         </div>
                         <br>
                         <dl>
                             <dt>al rojo</dt>
-                            <dd> 
+                            <dd>
                                 loc. adv. De color rojo por efecto de la alta temperatura. U. t. c. loc. adj.
                             </dd>
                             <dd>
                                 loc. adv. En estado de gran exaltación o emoción. U. t. c. loc. adj.
                             </dd>
                             <dt>al rojo blanco</dt>
-                            <dd>    loc. adv. De color blanquecino por efecto de la alta temperatura. U. t. c. loc. adj.</dd>
+                            <dd> loc. adv. De color blanquecino por efecto de la alta temperatura. U. t. c. loc. adj.
+                            </dd>
                             <dt>rojo alambrado, o rojo vivo</dt>
                             <dd>locs. adjs. De color encendido de brasa.</dd>
                         </dl>
                     </li>
                     <br>
-                    <li>Amarillo y sus matices
+                    <li id="maticesamarillos"><a href="#colores">Amarillo y sus matices</a>
                         <hr>
                         <ul type="square">
-                            <li>Amarillo de cadmio: fue creado en 1840 y se lo comenzó a utilizar como sustituto del amarillo de cromo.</li>
-                            <li>Amarillo cromo: era elaborado originalmente sobre la base de cromato de plomo, pigmento de color intenso que ofrece variaciones desde tonos claros hasta casi naranja.</li>
-                            <li>Amarillo nápoles: se obtenía originalmente del antimoniato de plomo. Es un pigmento de uso antiguo, aunque muy tóxico, a diferencia del anterior.</li>
+                            <li>Amarillo de cadmio: fue creado en 1840 y se lo comenzó a utilizar como sustituto del
+                                amarillo de cromo.</li>
+                            <li>Amarillo cromo: era elaborado originalmente sobre la base de cromato de plomo, pigmento
+                                de color intenso que ofrece variaciones desde tonos claros hasta casi naranja.</li>
+                            <li>Amarillo nápoles: se obtenía originalmente del antimoniato de plomo. Es un pigmento de
+                                uso antiguo, aunque muy tóxico, a diferencia del anterior.</li>
                         </ul>
                         <br>
                         <div class="imagenes">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lemon.jpg/330px-Lemon.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Schrecklicherpfeilgiftfrosch-01.jpg/250px-Schrecklicherpfeilgiftfrosch-01.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gelber_Kanarienvogel.JPG/250px-Gelber_Kanarienvogel.JPG" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lemon.jpg/330px-Lemon.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Schrecklicherpfeilgiftfrosch-01.jpg/250px-Schrecklicherpfeilgiftfrosch-01.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Gelber_Kanarienvogel.JPG/250px-Gelber_Kanarienvogel.JPG"
+                                alt="">
                         </div>
 
                         <br>
                         <dl>
                             <dt>amarillo, lla</dt>
-                            <dd> 
-                                Del b. lat. hisp. amarellus, y este del dim. del lat. amārus 'amargo'. adj. Dicho de un color: Semejante al del oro o al de la yema de huevo, y que ocupa el tercer lugar en el espectro luminoso. U. t. c. s. m.
+                            <dd>
+                                Del b. lat. hisp. amarellus, y este del dim. del lat. amārus 'amargo'. adj. Dicho de un
+                                color: Semejante al del oro o al de la yema de huevo, y que ocupa el tercer lugar en el
+                                espectro luminoso. U. t. c. s. m.
                             </dd>
                         </dl>
 
                     </li>
                     <br>
-                    <li>Azul y sus matices
+                    <li id="maticesazul"><a href="#colores">Azul y sus matices</a>
                         <hr>
                         <ul type="square">
-                            <li>Azul cielo: tono claro y brillante que evoca tranquilidad, serenidad y espacios abiertos.</li>
-                            <li>Azul marino: es la tonalidad más oscura del azul. Representa profesionalidad y autoridad.</li>
-                            <li>Azul petróleo: tono profundo y oscuro del azul, con matices verdosos. Aporta elegancia y sofisticación.</li>
+                            <li>Azul cielo: tono claro y brillante que evoca tranquilidad, serenidad y espacios
+                                abiertos.</li>
+                            <li>Azul marino: es la tonalidad más oscura del azul. Representa profesionalidad y
+                                autoridad.</li>
+                            <li>Azul petróleo: tono profundo y oscuro del azul, con matices verdosos. Aporta elegancia y
+                                sofisticación.</li>
                         </ul>
                         <br>
                         <div class="imagenes">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/MET_DP251168.jpg/250px-MET_DP251168.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Queen_Maria_I_of_Portugal_%281734-1816%29_in_an_18th_century_painting.jpg/250px-Queen_Maria_I_of_Portugal_%281734-1816%29_in_an_18th_century_painting.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Urn_with_cover_MET_DP104608.jpg/330px-Urn_with_cover_MET_DP104608.jpg" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/MET_DP251168.jpg/250px-MET_DP251168.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Queen_Maria_I_of_Portugal_%281734-1816%29_in_an_18th_century_painting.jpg/250px-Queen_Maria_I_of_Portugal_%281734-1816%29_in_an_18th_century_painting.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Urn_with_cover_MET_DP104608.jpg/330px-Urn_with_cover_MET_DP104608.jpg"
+                                alt="">
                         </div>
                         <br>
                         <dl>
                             <dt>azul de cobalto</dt>
-                            <dd> 
+                            <dd>
                                 m. Materia colorante muy usada en la pintura, que contiene derivados de cobalto.
                             </dd>
                             <dd>
@@ -254,18 +296,24 @@
             <article>
                 <h2>Básicos</h2>
                 <ol>
-                    <li>Verde y sus matices
+                    <li id="maticesverdes"><a href="#colores">Verde y sus matices</a>
                         <hr>
                         <ul type="square">
-                            <li>Verde agua (aqua green): verde azulado brillante que recuerda a las aguas tropicales claras. Es refrescante y vibrante.</li>
-                            <li>Verde esmeralda (emerald green): verde intenso con matices azulados, inspirado en la piedra preciosa. Evoca el lujo y la elegancia.</li>
-                            <li>Verde menta (mint green): verde claro y suave con toques azulados. Transmite frescura y tranquilidad.</li>
+                            <li>Verde agua (aqua green): verde azulado brillante que recuerda a las aguas tropicales
+                                claras. Es refrescante y vibrante.</li>
+                            <li>Verde esmeralda (emerald green): verde intenso con matices azulados, inspirado en la
+                                piedra preciosa. Evoca el lujo y la elegancia.</li>
+                            <li>Verde menta (mint green): verde claro y suave con toques azulados. Transmite frescura y
+                                tranquilidad.</li>
                         </ul>
                         <br>
                         <div class="imagenes">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Plagiomnium_affine_laminazellen.jpeg/250px-Plagiomnium_affine_laminazellen.jpeg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/PanellusStipticusAug12_2009.jpg/330px-PanellusStipticusAug12_2009.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Durga_Barisha_Club_2010_Arnab_Dutta.JPG/250px-Durga_Barisha_Club_2010_Arnab_Dutta.JPG" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Plagiomnium_affine_laminazellen.jpeg/250px-Plagiomnium_affine_laminazellen.jpeg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/PanellusStipticusAug12_2009.jpg/330px-PanellusStipticusAug12_2009.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Durga_Barisha_Club_2010_Arnab_Dutta.JPG/250px-Durga_Barisha_Club_2010_Arnab_Dutta.JPG"
+                                alt="">
                         </div>
 
                         <br>
@@ -279,7 +327,8 @@
                             <dd>loc. verb. Dar a las caballerías el alcacer o forraje.</dd>
                         </dl>
                     </li>
-                    <li> Naranja y sus matices
+                    <br>
+                    <li id="maticesnaranja"><a href="#colores">Naranja y sus matices</a>
                         <hr>
                         <ul type="square">
                             <li>Color naranja pastel / naranja pastel: suave, luminoso.</li>
@@ -288,19 +337,24 @@
                         </ul>
                         <br>
                         <div class="imagenes">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Midsummer_bonfire_closeup.jpg/250px-Midsummer_bonfire_closeup.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Buberel_unknown_flower_3.jpg/250px-Buberel_unknown_flower_3.jpg" alt="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Ocaso_-_aeropuerto_en_san_luis.jpg/250px-Ocaso_-_aeropuerto_en_san_luis.jpg" alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Midsummer_bonfire_closeup.jpg/250px-Midsummer_bonfire_closeup.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Buberel_unknown_flower_3.jpg/250px-Buberel_unknown_flower_3.jpg"
+                                alt="">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Ocaso_-_aeropuerto_en_san_luis.jpg/250px-Ocaso_-_aeropuerto_en_san_luis.jpg"
+                                alt="">
                         </div>
 
                         <br>
                         <dl>
                             <dt>media naranja</dt>
-                            <dd> f. coloq. Persona que se adapta tan perfectamente al gusto y carácter de otra, que esta la mira como la mitad de sí misma.
+                            <dd> f. coloq. Persona que se adapta tan perfectamente al gusto y carácter de otra, que esta
+                                la mira como la mitad de sí misma.
                             </dd>
                             <dd>f. coloq. Con respecto a una persona, cónyuge o pareja amorosa.</dd>
                             <dt>naranja agria</dt>
-                            <dd>f. Variedad de naranja que se distingue en tener la corteza más dura y menos lisa que las otras, y el gusto entre agrio y amargo.</dd>
+                            <dd>f. Variedad de naranja que se distingue en tener la corteza más dura y menos lisa que
+                                las otras, y el gusto entre agrio y amargo.</dd>
                         </dl>
 
                     </li>
